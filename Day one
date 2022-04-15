@@ -1,0 +1,5 @@
+#Day 1 project
+print("Band Name Generator")
+a = input("What is you name: \n")
+b = input("what is you favourite word: \n")
+print("Your name could be: " + a +" "+ b)
