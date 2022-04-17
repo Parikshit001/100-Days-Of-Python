@@ -1,0 +1,24 @@
+#On the day two based on understanding two projects were created
+
+
+#BMI CALCULATOR
+height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+w = int(weight)
+h = float(height)
+bmi = w/h**2
+print(int(bmi))
+
+
+
+
+
+#TIP CALCULATOR 
+print("Welcome to tip calculator")
+bill = float(input("What was the total bill? "))
+tip  = int(input("How much tip would you ike to give? 10, 12 or 15? "))
+split= int(input("How many people to split the bill into? "))
+TP = tip/100 * bill
+Total_Bill = bill + TP
+A_split = float(round(Total_Bill / split,2))
+print(f"Each person should pay: {A_split}")
