@@ -1,0 +1,96 @@
+#ON DAY 3 USING IF/ELSE CONDITIONING 4 PROJECTS WERE CREATED SHOWING THE DIFFERENT TYPES OF S:
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------------------------------------------
+#Project to calculate the Pizza Bill
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L ")
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
+
+if size == "S":
+    bill = bill + 15
+elif size == "M":
+    bill = bill + 20
+else:
+    bill = bill + 25
+
+if add_pepperoni == "Y":
+    if size == "S":
+        bill = bill + 2
+    else:
+        bill = bill + 3
+
+if extra_cheese == "Y":
+    bill = bill +1
+
+print(f"Your final bill is: ${bill}.")
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------------------------------------------
+#THIS BMI CALCULATOR IS JUST A MORE REFINED VERSION OF THE OEN CREATED ON THE PREVIOUS DAY
+
+height = float(input("enter your height in m: "))
+weight = float(input("enter your weight in kg: "))
+
+# h = height ** 2
+bmi = weight / height **2
+r = round(bmi)
+if r < 18:
+    print(f"Your BMI is {r}, you are underweight.")
+elif r > 18 and r < 25:
+    print(f"Your BMI is {r}, you have a normal weight.")
+elif r > 25 and r < 30:
+    print(f"Your BMI is {r}, you are slightly overweight.")
+elif r > 30 and r < 35:
+    print(f"Your BMI is {r}, you are obese.")
+else:
+    print(f"Your BMI is {r}, you are clinically obese.") 
+#--------------------------------------------------------------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#LEAP YEAR CALCULATOR
+
+year = int(input("Which year do you want to check? "))
+
+#Write your code below this line 👇
+if year % 4 == 0 or year % 400 == 0:
+    print("Leap year.")
+else:
+    print("Not leap year.")
+   
+#--------------------------------------------------------------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------------------------------------------
+#LOVE CALCULATOR
+
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+
+
+combined_strinf = name1+name2
+lower_string = combined_strinf.lower()
+
+t = lower_string.count('t')
+r = lower_string.count('r')
+u = lower_string.count('u')
+e = lower_string.count('e')
+
+true = t + r + u + e
+
+l = lower_string.count('l')
+o = lower_string.count('o')
+v = lower_string.count('v')
+e = lower_string.count('e')
+
+love = l + o + v + e
+love_score1 = str(true) + str(love)
+love_score = int(love_score1)
+
+
+if love_score < 10 or love_score > 90:
+    print(f"Your score is {love_score}, you go together like coke and mentos.")
+elif love_score >= 40 and love_score <= 50:
+    print(f"Your score is {love_score}, you are alright together.")
+else:
+    print(f"Your score is {love_score}.")
